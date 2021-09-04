@@ -11,7 +11,7 @@ public class MovePlate : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        transform.position = new Vector3(0, 0, 0);
+      
     }
 
     // Update is called once per frame
@@ -19,6 +19,7 @@ public class MovePlate : MonoBehaviour
     {
         movementX = Input.GetAxis("Mouse X");
         movementY = Input.GetAxis("Mouse Y");
+        
         transform.Translate(movementX*speed*Time.deltaTime,0,movementY*speed*Time.deltaTime);
     }
 }

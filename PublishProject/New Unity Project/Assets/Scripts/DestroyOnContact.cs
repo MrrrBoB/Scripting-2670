@@ -4,9 +4,8 @@ using UnityEngine;
 
 public class DestroyOnContact : MonoBehaviour
 {
-    public void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.name == "Plate")
         Destroy(gameObject);
     }
 }
