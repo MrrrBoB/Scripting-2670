@@ -6,6 +6,7 @@ public class RandomSpawn : MonoBehaviour
 {
     public GameObject spawnObject;
     public float intermission;
+    public bool activated = true;
     // Start is called before the first frame update
     //new Vector3(Random.Range(-8, 8), 8, Random.Range(-8, 8))
     void Start()
@@ -20,7 +21,10 @@ public class RandomSpawn : MonoBehaviour
     }
     public IEnumerator spawn()
     {
-        Instantiate(spawnObject, new Vector3(Random.Range(-8, 8), 8, Random.Range(-8, 8)), Quaternion.identity);
-        yield return new WaitForSeconds(intermission);
+        while (activated)
+        {
+            Instantiate(spawnObject, new Vector3(Random.Range(-8, 8), 8, Random.Range(-8, 8)), Quaternion.identity);
+            yield return new WaitForSeconds(intermission);
+        }
     }
 }
