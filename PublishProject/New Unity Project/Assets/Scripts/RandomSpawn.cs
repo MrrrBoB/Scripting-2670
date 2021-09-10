@@ -7,17 +7,24 @@ public class RandomSpawn : MonoBehaviour
     public GameObject spawnObject;
     public float intermission;
     public bool activated = true;
+    public float StartIntermission;
+    public float spawnTime;
+    public float speedIncrease;
+
+    public Material[] MList;
     // Start is called before the first frame update
     //new Vector3(Random.Range(-8, 8), 8, Random.Range(-8, 8))
     void Start()
     {
+        MList = new Material[4];
         StartCoroutine(spawn());
+        intermission = StartIntermission;
     }
 
     // Update is called once per frame
    void Update()
     {
-       
+        spawnTime += Time.deltaTime;
     }
     public IEnumerator spawn()
     {
@@ -25,6 +32,12 @@ public class RandomSpawn : MonoBehaviour
         {
             Instantiate(spawnObject, new Vector3(Random.Range(-8, 8), 8, Random.Range(-8, 8)), Quaternion.identity);
             yield return new WaitForSeconds(intermission);
+            
+            if (spawnTime >= 10)
+            {
+                intermission *= speedIncrease;
+                spawnTime = 0;
+            }
         }
     }
 }
