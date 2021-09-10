@@ -10,4 +10,8 @@ public class ScoreHolder : ScriptableObject
     {
         destroyed += num;
     }
+    public void resetValue(float num)
+    {
+        destroyed = num;
+    }
 }
