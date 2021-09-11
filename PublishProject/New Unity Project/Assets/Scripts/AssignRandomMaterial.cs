@@ -8,7 +8,7 @@ public class AssignRandomMaterial : MonoBehaviour
     public Material[] matPool;
     void Awake()
     {
-        this.gameObject.GetComponent<MeshRenderer>().material = matPool[Random.Range(0, 3)];
+        this.gameObject.GetComponent<MeshRenderer>().material = matPool[Random.Range(0, 4)];
     }
 
     // Update is called once per frame

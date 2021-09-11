@@ -12,6 +12,7 @@ public class AdoptMaterial : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         this.gameObject.GetComponent<MeshRenderer>().material = collision.gameObject.GetComponent<MeshRenderer>().material;
+        this.gameObject.transform.GetChild(0).gameObject.GetComponent<Light>().color = this.gameObject.GetComponent<MeshRenderer>().material.color;
     }
     // Update is called once per frame
     void Update()
