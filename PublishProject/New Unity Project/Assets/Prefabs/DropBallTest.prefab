@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 2824117486816881481}
   - component: {fileID: 2824117486816881486}
   - component: {fileID: 2824117486816881487}
+  - component: {fileID: 3768537379597795017}
   m_Layer: 0
   m_Name: DropBallTest
   m_TagString: Untagged
@@ -43,7 +44,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2824117486816881480}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 2540817853737639666, guid: 685b1affab0fa17408360b5cd9d1aef5, type: 3}
 --- !u!23 &2824117486816881483
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -151,3 +152,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fallSpeed: -3
+--- !u!114 &3768537379597795017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2824117486816881480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b77ccbd4e929874ea59b31afcb607b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  matPool:
+  - {fileID: 2100000, guid: 8eff73fc0e78fe44dbf05d77718799b1, type: 2}
+  - {fileID: 2100000, guid: 5a8edb25725e8004daebab59aaa672b9, type: 2}
+  - {fileID: 2100000, guid: 2c008edae95bb9f41ad6498031293f62, type: 2}
+  - {fileID: 2100000, guid: b7827789722baee449cf2830a8daf833, type: 2}
