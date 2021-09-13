@@ -30,7 +30,7 @@ public class RandomSpawn : MonoBehaviour
     {
         while (activated)
         {
-            Instantiate(spawnObject, new Vector3(Random.Range(-8, 8), 8, Random.Range(-8, 8)), Quaternion.identity);
+            Instantiate(spawnObject, new Vector3(Random.Range(-6, 6), 8, Random.Range(-6, 6)), Quaternion.identity);
             yield return new WaitForSeconds(intermission);
             
             if (spawnTime >= 10)
