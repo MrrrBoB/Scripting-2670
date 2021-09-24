@@ -11,12 +11,12 @@ public class RandomSpawn : MonoBehaviour
     public float spawnTime;
     public float speedIncrease;
 
-    public Material[] MList;
+    
     // Start is called before the first frame update
     //new Vector3(Random.Range(-8, 8), 8, Random.Range(-8, 8))
     void Start()
     {
-        MList = new Material[4];
+       
         StartCoroutine(spawn());
         intermission = StartIntermission;
     }
