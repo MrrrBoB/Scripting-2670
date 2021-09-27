@@ -16,6 +16,7 @@ public class LifeManager : ScriptableObject
     public void DeductLives(int n)
     {
         currentLives -= n;
+        UpdateDisplay();
     }
 
     public void ResetLives()
@@ -28,7 +29,7 @@ public class LifeManager : ScriptableObject
     private void UpdateDisplay()
     {
         if (lifeDisplay != null)
-            lifeDisplay.text = currentLives.ToString();
+            lifeDisplay.text = currentLives.ToString("0");
     }
 
     

@@ -7,7 +7,9 @@ public class MonoEventsBehavior : MonoBehaviour
 {
     public UnityEvent startEvent;
     public UnityEvent collisionEvent;
-    
+    public UnityEvent triggerEnterEvent;
+    public unityeve
+
     void Start()
     {
         startEvent.Invoke();
@@ -16,5 +18,9 @@ public class MonoEventsBehavior : MonoBehaviour
     public void OnCollisionEnter(Collision other)
     {
         collisionEvent.Invoke();
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        triggerEnterEvent.Invoke();
     }
 }
