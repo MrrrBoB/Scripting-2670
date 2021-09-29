@@ -324,6 +324,9 @@ MonoBehaviour:
       m_Calls: []
   collisionEvent:
     m_PersistentCalls:
+      m_Calls: []
+  triggerEnterEvent:
+    m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 11400000, guid: 252ad17ca6c7d5e4f9782438ab838cc2, type: 2}
         m_TargetAssemblyTypeName: LifeManager, Assembly-CSharp
@@ -501,6 +504,26 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2949775397453166786, guid: c8a50da14122213448c14951028d2071, type: 3}
   m_PrefabInstance: {fileID: 1561093407}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &923191107 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2587413705711776200, guid: ba251192e18298945a64892b366aed9b, type: 3}
+  m_PrefabInstance: {fileID: 2587413703892589133}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &923191108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 923191107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aba9629a800680e4089942423182d150, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreLabel: {fileID: 0}
+  lifeM: {fileID: 0}
+  score: 0
 --- !u!1 &1255791358 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4480495270688742896, guid: 70fb02be2cd805d48a124566a2481934, type: 3}
@@ -561,7 +584,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2113e06ee395e3b40aa6f5e2dd5a48f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedModifier: 5
+  speedModifier: 2
   body: {fileID: 1335815228}
 --- !u!1 &1408821882 stripped
 GameObject:
@@ -596,6 +619,9 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   collisionEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  triggerEnterEvent:
     m_PersistentCalls:
       m_Calls: []
 --- !u!1 &1526332097 stripped

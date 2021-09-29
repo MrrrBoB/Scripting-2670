@@ -8,7 +8,6 @@ public class MonoEventsBehavior : MonoBehaviour
     public UnityEvent startEvent;
     public UnityEvent collisionEvent;
     public UnityEvent triggerEnterEvent;
-    public unityeve
 
     void Start()
     {
