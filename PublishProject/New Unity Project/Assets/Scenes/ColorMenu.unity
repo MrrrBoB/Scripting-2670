@@ -576,8 +576,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 46}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 0, y: 131}
+  m_SizeDelta: {x: 500, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &812850398
 MonoBehaviour:
@@ -593,7 +593,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selectedM: {fileID: 2100000, guid: 0dc977f4c6b239342a3aabc1d0105cb1, type: 2}
   setColors: {fileID: 11400000, guid: 29713edb09595584ba4ed91b42e0ec83, type: 2}
-  colorSlot: 0
+  colorSlot: 1
 --- !u!114 &812850399
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -640,7 +640,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 812850398}
         m_TargetAssemblyTypeName: ColorButton, Assembly-CSharp
-        m_MethodName: assignColor
+        m_MethodName: AssignColor
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -725,8 +725,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 0, y: -69.1}
+  m_SizeDelta: {x: 500, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1166710162
 MonoBehaviour:
@@ -742,7 +742,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selectedM: {fileID: 2100000, guid: 9c89e7e6eb5729f42a7733fb04f25deb, type: 2}
   setColors: {fileID: 11400000, guid: 29713edb09595584ba4ed91b42e0ec83, type: 2}
-  colorSlot: 0
+  colorSlot: 1
 --- !u!114 &1166710163
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -789,7 +789,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1166710162}
         m_TargetAssemblyTypeName: ColorButton, Assembly-CSharp
-        m_MethodName: assignColor
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
