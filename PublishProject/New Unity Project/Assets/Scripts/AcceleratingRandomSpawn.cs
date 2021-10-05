@@ -33,12 +33,6 @@ public class AcceleratingRandomSpawn : MonoBehaviour
          Instantiate(spawnObject, new Vector3(Random.Range(-6, 6), 8, Random.Range(-6, 6)), Quaternion.identity);
       }
    }
-
-   public void ChangeInterval(float speedM)
-   {
-      wfs = new WaitForSeconds(currentInterval * speedM);
-   }
-
    private IEnumerator AcceleratingCoroutine()
    {
       currentInterval = startInterval;

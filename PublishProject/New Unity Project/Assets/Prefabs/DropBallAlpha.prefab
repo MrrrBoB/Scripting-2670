@@ -105,8 +105,8 @@ GameObject:
   - component: {fileID: 1222938250262465954}
   - component: {fileID: 1222938250262465957}
   - component: {fileID: 1222938250262465956}
-  - component: {fileID: 1222938250262465959}
   - component: {fileID: 1222938250262465952}
+  - component: {fileID: -9158648279961390915}
   - component: {fileID: 1222938250262465953}
   - component: {fileID: 253733166502942759}
   - component: {fileID: 2690559507279224288}
@@ -195,18 +195,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1222938250262465959
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1222938250262465958}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5289cf708528b024dafdc80543dfd2d3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1222938250262465952
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -234,6 +222,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: -9158648279961390915}
+        m_TargetAssemblyTypeName: Destroy, Assembly-CSharp
+        m_MethodName: DeleteObject
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &-9158648279961390915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1222938250262465958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abb46d2f2c9fb3b42bd73a99ffdd2d8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1222938250262465953
 MonoBehaviour:
   m_ObjectHideFlags: 0
