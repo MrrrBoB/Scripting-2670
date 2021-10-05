@@ -5,12 +5,13 @@ using UnityEngine;
 public class ScoreHolder : ScriptableObject
 {
     public float destroyed;
+    
 
-    public void addToValue(float num)
+    public void addToScore(float num)
     {
         destroyed += num;
     }
-    public void resetValue(float num)
+    public void resetScore(float num)
     {
         destroyed = num;
     }

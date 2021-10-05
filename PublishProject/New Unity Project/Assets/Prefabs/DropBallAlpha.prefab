@@ -105,11 +105,11 @@ GameObject:
   - component: {fileID: 1222938250262465954}
   - component: {fileID: 1222938250262465957}
   - component: {fileID: 1222938250262465956}
-  - component: {fileID: 1222938250262465952}
   - component: {fileID: -9158648279961390915}
-  - component: {fileID: 1222938250262465953}
+  - component: {fileID: 5335445172412874447}
   - component: {fileID: 253733166502942759}
   - component: {fileID: 2690559507279224288}
+  - component: {fileID: -4562076841933517576}
   m_Layer: 0
   m_Name: DropBallAlpha
   m_TagString: Untagged
@@ -195,45 +195,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1222938250262465952
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1222938250262465958}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: abafe5275ddf8fb4891fb962a60fe6d4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerEnterEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 11400000, guid: 6393957e30ff92244bca1b58fd22cb2c, type: 2}
-        m_TargetAssemblyTypeName: ScoreHolder, Assembly-CSharp
-        m_MethodName: addToValue
-        m_Mode: 4
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 1
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: -9158648279961390915}
-        m_TargetAssemblyTypeName: Destroy, Assembly-CSharp
-        m_MethodName: DeleteObject
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &-9158648279961390915
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -246,19 +207,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abb46d2f2c9fb3b42bd73a99ffdd2d8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1222938250262465953
+--- !u!114 &5335445172412874447
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1222938250262465958}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29e427d2be4524c4987cad6159701cb5, type: 3}
+  m_Script: {fileID: 11500000, guid: 549ea319b322b1249ae86f3b8a6d177c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fallSpeed: -3
+  score: {fileID: 11400000, guid: 6393957e30ff92244bca1b58fd22cb2c, type: 2}
+  lifeM: {fileID: 11400000, guid: 252ad17ca6c7d5e4f9782438ab838cc2, type: 2}
 --- !u!114 &253733166502942759
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -293,3 +255,60 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &-4562076841933517576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1222938250262465958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d4fa7a63a1e4a94ebf500633d49e420, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 253733166502942759}
+        m_TargetAssemblyTypeName: AssignRandomMaterial, Assembly-CSharp
+        m_MethodName: assignRandom
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  collisionEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  triggerEnterEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 6393957e30ff92244bca1b58fd22cb2c, type: 2}
+        m_TargetAssemblyTypeName: ScoreHolder, Assembly-CSharp
+        m_MethodName: addToScore
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 1
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: -9158648279961390915}
+        m_TargetAssemblyTypeName: Destroy, Assembly-CSharp
+        m_MethodName: DeleteObject
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

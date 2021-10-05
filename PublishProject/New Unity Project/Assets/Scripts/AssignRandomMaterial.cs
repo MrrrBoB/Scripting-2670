@@ -8,16 +8,12 @@ public class AssignRandomMaterial : MonoBehaviour
     public Material[] matPool;
     public ColorPallet colorPool;
 
-    private void Awake()
+   
+
+    public void assignRandom()
     {
         this.gameObject.GetComponent<MeshRenderer>().material =
             colorPool.GetMat(Random.Range(0, colorPool.colorList.Count ));
         gameObject.transform.GetChild(0).gameObject.GetComponent<Light>().color = gameObject.GetComponent<MeshRenderer>().material.color;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
