@@ -15,7 +15,11 @@ public class ScoreHolder : ScriptableObject
     {
         destroyed = num;
     }
-    
+
+    public float getValue()
+    {
+        return destroyed;
+    }
 
     
 }

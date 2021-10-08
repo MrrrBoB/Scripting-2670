@@ -8,8 +8,9 @@ public class SimpleTextBehavio : MonoBehaviour
 {
     public Text scoreLabel;
     public LifeManager lifeM;
+    public ScoreHolder score;
 
-    public int score;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +24,6 @@ public class SimpleTextBehavio : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        scoreLabel.text = score.ToString("0");
+        scoreLabel.text = score.getValue().ToString("0");
     }
 }
