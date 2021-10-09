@@ -1270,6 +1270,20 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2587413704648044599, guid: ba251192e18298945a64892b366aed9b, type: 3}
   m_PrefabInstance: {fileID: 2587413703892589133}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1408821886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1408821882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a00cd6d780abf5f46b540e14019009c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuButton: {fileID: 1669671361}
+  gameIsPaused: 0
 --- !u!114 &1408821887
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1315,6 +1329,34 @@ MonoBehaviour:
   triggerEnterEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1408821888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1408821882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 703d0a8a200977f45a6fc3747d113d4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameActionObj: {fileID: 11400000, guid: 406358b14ab0ac943b11e4358356c05c, type: 2}
+  respondEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1408821886}
+        m_TargetAssemblyTypeName: GamePause, Assembly-CSharp
+        m_MethodName: ChangePause
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1526332097 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4480495269867188170, guid: 70fb02be2cd805d48a124566a2481934, type: 3}
@@ -1820,6 +1862,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menuButton: {fileID: 1669671361}
+  gameIsPaused: 0
 --- !u!114 &1697722613
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1872,7 +1915,7 @@ MonoBehaviour:
         m_MethodName: PauseToggle
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 1697722613}
+          m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Toggle, UnityEngine.UI
           m_IntArgument: 0
           m_FloatArgument: 0
