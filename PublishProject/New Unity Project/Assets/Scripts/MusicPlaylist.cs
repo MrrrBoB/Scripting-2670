@@ -13,4 +13,8 @@ public class MusicPlaylist : ScriptableObject
         selectedSong = SongList[i];
     }
 
+    public AudioClip getCurrentSong()
+    {
+        return selectedSong;
+    }
 }

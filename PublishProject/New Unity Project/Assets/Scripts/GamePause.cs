@@ -8,6 +8,8 @@ public class GamePause : MonoBehaviour
     // Start is called before the first frame update
     public Button menuButton;
     public bool gameIsPaused;
+    
+    
     public void PauseToggle(Toggle obj)
     {
         Time.timeScale = obj.isOn ? 0 : 1;
@@ -18,8 +20,14 @@ public class GamePause : MonoBehaviour
 
     public void ChangePause()
     {
-        Time.timeScale = gameIsPaused ? 1 : 0;
+        toggleTime(gameIsPaused);
+        menuButton.enabled = gameIsPaused;
         gameIsPaused = !gameIsPaused;
-        Debug.Log("Game End Pause");
+        Debug.Log("Game Paused "+gameIsPaused.ToString());
+    }
+
+    private void toggleTime(bool paused)
+    {
+        Time.timeScale = paused ? 1 : 0;
     }
 }
