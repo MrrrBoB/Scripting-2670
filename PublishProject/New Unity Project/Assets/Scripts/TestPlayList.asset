@@ -16,4 +16,4 @@ MonoBehaviour:
   - {fileID: 8300000, guid: a1e175f58b9f0034f8ee0c247014813a, type: 3}
   - {fileID: 8300000, guid: 508f7801ac808c64096773941f11b012, type: 3}
   - {fileID: 8300000, guid: e119d1b3cfe52e943ad4145c8132c964, type: 3}
-  selectedSong: {fileID: 8300000, guid: e119d1b3cfe52e943ad4145c8132c964, type: 3}
+  selectedSong: 0

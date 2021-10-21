@@ -35,20 +35,23 @@ public class AcceleratingRandomSpawn : MonoBehaviour
    }
    private IEnumerator AcceleratingCoroutine()
    {
-      currentInterval = startInterval;
       wfs = new WaitForSeconds(currentInterval);
       while (activated)
       {
-         yield return wfs;
          if (currentInterval >= 1)
          {
             currentInterval *= accelerationFactor;
             wfs = new WaitForSeconds(currentInterval);
          }
+         yield return wfs;
          Instantiate(spawnObject, new Vector3(Random.Range(-6, 6), 8, Random.Range(-6, 6)), Quaternion.identity);
          
       }
    }
 
+   public void ResetSpawner()
+   {
+      currentInterval = startInterval;
+   }
 
 }

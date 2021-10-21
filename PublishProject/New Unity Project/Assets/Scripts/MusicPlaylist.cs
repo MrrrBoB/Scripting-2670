@@ -6,15 +6,15 @@ using UnityEngine;
 public class MusicPlaylist : ScriptableObject
 {
     public List<AudioClip> SongList;
-    public AudioClip selectedSong;
+    public int selectedSong;
 
     public void setSong(int i)
     {
-        selectedSong = SongList[i];
+        selectedSong = i;
     }
 
     public AudioClip getCurrentSong()
     {
-        return selectedSong;
+        return SongList[selectedSong];
     }
 }
