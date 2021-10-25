@@ -1239,12 +1239,12 @@ GameObject:
   - component: {fileID: 929326982}
   - component: {fileID: 929326981}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: PausePanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &929326980
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1639,6 +1639,15 @@ MonoBehaviour:
   triggerEnterEvent:
     m_PersistentCalls:
       m_Calls: []
+  destroyEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  disableEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  quitEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1335815224 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2949775397453166790, guid: c8a50da14122213448c14951028d2071, type: 3}
@@ -1752,6 +1761,15 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   triggerEnterEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  destroyEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  disableEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  quitEvent:
     m_PersistentCalls:
       m_Calls: []
 --- !u!114 &1408821888
@@ -2111,6 +2129,15 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  destroyEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  disableEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  quitEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1706302029
 GameObject:
   m_ObjectHideFlags: 0
