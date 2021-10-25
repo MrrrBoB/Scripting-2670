@@ -10,7 +10,7 @@ public class CanvasScript : MonoBehaviour
 
     
 
-    public void toggleEndScreen()
+    public void toggleCanvas()
     {
         if (!endScreen.enabled)
         {

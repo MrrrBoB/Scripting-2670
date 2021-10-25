@@ -5,9 +5,8 @@ using UnityEngine;
 using UnityEngine.Events;
 public class MonoEventsBehavior : MonoBehaviour
 {
-    public UnityEvent startEvent;
-    public UnityEvent collisionEvent;
-    public UnityEvent triggerEnterEvent;
+    public UnityEvent startEvent, collisionEvent, triggerEnterEvent, destroyEvent, disableEvent, quitEvent;
+   
     void Start()
     {
         startEvent.Invoke();
@@ -22,5 +21,20 @@ public class MonoEventsBehavior : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         triggerEnterEvent.Invoke();
+    }
+
+    private void OnApplicationQuit()
+    {
+        quitEvent.Invoke();
+    }
+
+    private void OnDestroy()
+    {
+        destroyEvent.Invoke();
+    }
+
+    private void OnDisable()
+    {
+        disableEvent.Invoke();
     }
 }

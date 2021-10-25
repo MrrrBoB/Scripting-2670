@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class LevelChange : MonoBehaviour
+public class SceneManaging : MonoBehaviour
 {
     
 
@@ -13,5 +13,9 @@ public class LevelChange : MonoBehaviour
     {
         SceneManager.LoadScene(scnfour);
     }
-    
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
 }
