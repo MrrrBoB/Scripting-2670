@@ -1831,7 +1831,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1408821889}
         m_TargetAssemblyTypeName: CanvasScript, Assembly-CSharp
-        m_MethodName: toggleEndScreen
+        m_MethodName: toggleCanvas
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2556,11 +2556,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2587413705711776203, guid: ba251192e18298945a64892b366aed9b, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 449
+      value: 450
       objectReference: {fileID: 0}
     - target: {fileID: 2587413705711776203, guid: ba251192e18298945a64892b366aed9b, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -345
+      value: -337
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba251192e18298945a64892b366aed9b, type: 3}
