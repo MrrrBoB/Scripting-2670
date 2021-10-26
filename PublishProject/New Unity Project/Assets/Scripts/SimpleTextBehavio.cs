@@ -19,11 +19,11 @@ public class SimpleTextBehavio : MonoBehaviour
 
     public void updateValue()
     {
-        scoreLabel.text = lifeM.currentLives.ToString("0");
+        scoreLabel.text = score.destroyed.ToString("0");
     }
     // Update is called once per frame
-    void Update()
+   /* void Update()
     {
         scoreLabel.text = score.getValue().ToString("0");
-    }
+    }*/
 }

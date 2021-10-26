@@ -1202,7 +1202,7 @@ MonoBehaviour:
   scoreLabel: {fileID: 923191112}
   lifeM: {fileID: 11400000, guid: 252ad17ca6c7d5e4f9782438ab838cc2, type: 2}
   score: {fileID: 11400000, guid: 6393957e30ff92244bca1b58fd22cb2c, type: 2}
---- !u!114 &923191110
+--- !u!114 &923191109
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1211,11 +1211,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 923191107}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bdf3abf235f8204469b3f86f40c42364, type: 3}
+  m_Script: {fileID: 11500000, guid: 703d0a8a200977f45a6fc3747d113d4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisText: {fileID: 923191112}
-  score: {fileID: 11400000, guid: 6393957e30ff92244bca1b58fd22cb2c, type: 2}
+  gameActionObj: {fileID: 11400000, guid: ef149ae9b79081c48864f9c619410b76, type: 2}
+  respondEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 923191108}
+        m_TargetAssemblyTypeName: SimpleTextLives, Assembly-CSharp
+        m_MethodName: updateValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &923191112 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2587413705711776202, guid: ba251192e18298945a64892b366aed9b, type: 3}
@@ -2116,19 +2130,7 @@ MonoBehaviour:
       m_Calls: []
   triggerEnterEvent:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1687513306}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   destroyEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -2252,7 +2254,7 @@ GameObject:
   - component: {fileID: 1727116933}
   - component: {fileID: 1727116932}
   - component: {fileID: 1727116931}
-  - component: {fileID: 1727116930}
+  - component: {fileID: 1727116929}
   m_Layer: 5
   m_Name: Score
   m_TagString: Untagged
@@ -2279,7 +2281,7 @@ RectTransform:
   m_AnchoredPosition: {x: 449.00003, y: -283}
   m_SizeDelta: {x: 750, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1727116930
+--- !u!114 &1727116929
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2288,11 +2290,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 1727116927}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bdf3abf235f8204469b3f86f40c42364, type: 3}
+  m_Script: {fileID: 11500000, guid: 703d0a8a200977f45a6fc3747d113d4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisText: {fileID: 1727116932}
-  score: {fileID: 11400000, guid: 6393957e30ff92244bca1b58fd22cb2c, type: 2}
+  gameActionObj: {fileID: 11400000, guid: ef149ae9b79081c48864f9c619410b76, type: 2}
+  respondEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1727116931}
+        m_TargetAssemblyTypeName: SimpleTextBehavio, Assembly-CSharp
+        m_MethodName: updateValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1727116931
 MonoBehaviour:
   m_ObjectHideFlags: 0
