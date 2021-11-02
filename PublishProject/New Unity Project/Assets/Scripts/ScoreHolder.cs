@@ -21,6 +21,11 @@ public class ScoreHolder : ScriptableObject
         return destroyed;
     }
 
+    public float getHighScore()
+    {
+        updateHighScore();
+        return destroyedHighScore;
+    }
     public void updateHighScore()
     {
         if (destroyed > destroyedHighScore)

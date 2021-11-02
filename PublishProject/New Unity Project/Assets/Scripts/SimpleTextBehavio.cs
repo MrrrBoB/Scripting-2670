@@ -21,6 +21,11 @@ public class SimpleTextBehavio : MonoBehaviour
     {
         scoreLabel.text = score.destroyed.ToString("0");
     }
+
+    public void showHighScore()
+    {
+        scoreLabel.text = score.getHighScore().ToString("0");
+    }
     // Update is called once per frame
    /* void Update()
     {
