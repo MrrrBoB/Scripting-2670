@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: TestLevelColors
   m_EditorClassIdentifier: 
   colorList:
-  - {fileID: 2100000, guid: 2c008edae95bb9f41ad6498031293f62, type: 2}
   - {fileID: 2100000, guid: 1eaf98f2d3c6151409708c3dce0d86a0, type: 2}
-  - {fileID: 2100000, guid: 3fe1890ba592ac84d9bfc83691fe5a30, type: 2}
+  - {fileID: 2100000, guid: 1846abf315c4b364db1aa7895fdabbd0, type: 2}
+  - {fileID: 2100000, guid: 2c008edae95bb9f41ad6498031293f62, type: 2}
   - {fileID: 2100000, guid: 5a8edb25725e8004daebab59aaa672b9, type: 2}
